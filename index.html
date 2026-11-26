@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página personal de César Antonio Arroyo Pariente, estudiante de Administración de Empresas de la Universidad Católica San Pablo.">
+  <title>César Antonio Arroyo Pariente | Página personal</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #647084;
+      --accent: #2563eb;
+      --accent-soft: #eaf1ff;
+      --paper: #ffffff;
+      --bg: #f4f6fb;
+      --line: #e5e9f2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      max-width: 1080px; margin: auto; padding: 14px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand { font-weight: 800; letter-spacing: -.04em; color: var(--accent); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; font-size: .92rem; color: var(--muted); }
+    .navlinks a:hover { color: var(--accent); }
+    .wrap { width: min(920px, calc(100% - 40px)); margin: 0 auto; }
+    header.hero {
+      padding: 88px 0 76px;
+      background: radial-gradient(circle at 85% 15%, #dce8ff 0, transparent 34%), linear-gradient(135deg, #fff, #f2f6ff);
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      display: inline-block; padding: 6px 12px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent);
+      font-size: .82rem; font-weight: 700; letter-spacing: .03em;
+    }
+    h1 { margin: 18px 0 10px; max-width: 760px; font-size: clamp(2.4rem, 7vw, 4.5rem); line-height: 1.04; letter-spacing: -.06em; }
+    .hero p { max-width: 650px; color: var(--muted); font-size: 1.12rem; margin: 14px 0 0; }
+    .meta { margin-top: 22px; color: #40506b; font-weight: 600; }
+    main { padding: 28px 0 70px; }
+    section {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 20px; padding: 30px; margin: 22px 0;
+      box-shadow: 0 8px 28px rgba(24, 39, 75, .035);
+      scroll-margin-top: 90px;
+    }
+    h2 { margin: 0 0 16px; font-size: 1.55rem; letter-spacing: -.035em; }
+    h3 { margin: 20px 0 5px; font-size: 1.05rem; }
+    p { margin: 8px 0; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .item { background: #f8faff; border: 1px solid var(--line); padding: 17px; border-radius: 14px; }
+    .item h3 { margin-top: 0; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin: 5px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+    .chip { background: var(--accent-soft); color: #244b9b; border-radius: 999px; padding: 7px 12px; font-size: .9rem; font-weight: 600; }
+    .course { padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .course:last-child { border-bottom: 0; padding-bottom: 0; }
+    .course h3 { margin: 0 0 3px; }
+    footer { text-align: center; padding: 28px 20px 42px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 650px) {
+      .nav { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .navlinks { gap: 12px; font-size: .85rem; }
+      header.hero { padding: 62px 0 54px; }
+      section { padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#inicio">César A.</a>
+      <div class="navlinks">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#formacion">Formación</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#intereses">Intereses</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <span class="eyebrow">Página personal · Universidad</span>
+      <h1>César Antonio<br>Arroyo Pariente</h1>
+      <p>Estudiante de Administración de Empresas, interesado en desarrollar soluciones, aprender constantemente y convertir las ideas en proyectos con valor.</p>
+      <div class="meta">Universidad Católica San Pablo · Arequipa, Perú</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Soy César Antonio Arroyo Pariente, estudiante de Administración de Empresas en la Universidad Católica San Pablo. Me considero una persona responsable, perseverante y orientada a los objetivos. Me gusta asumir nuevos retos, aprender de diferentes experiencias y trabajar con otras personas para alcanzar resultados.</p>
+      <p>Mi formación universitaria me permite fortalecer mis conocimientos en gestión, estrategia comercial y análisis de negocios. Además, valoro las experiencias laborales y personales que contribuyen a mi crecimiento y a mi capacidad para adaptarme a distintos entornos.</p>
+    </section>
+
+    <section id="formacion">
+      <h2>Formación académica</h2>
+      <div class="item">
+        <h3>Universidad Católica San Pablo (UCSP)</h3>
+        <p><strong>Administración de Empresas</strong></p>
+        <p class="muted">Arequipa, Perú</p>
+        <p>Formación orientada a la gestión empresarial, el análisis de organizaciones, la toma de decisiones y el desarrollo de estrategias para generar valor.</p>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia laboral</h2>
+      <div class="item">
+        <h3>Barista · Starbucks</h3>
+        <p class="muted">2021 – 2022</p>
+        <p>Durante la pandemia, trabajé como barista en Starbucks. Esta experiencia me permitió desarrollar habilidades de atención al cliente, preparación de bebidas, trabajo en equipo y adaptación a un entorno de servicio dinámico, manteniendo la responsabilidad y el cuidado de los protocolos de higiene.</p>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Personales</h3>
+          <div class="chips">
+            <span class="chip">Responsabilidad</span>
+            <span class="chip">Perseverancia</span>
+            <span class="chip">Adaptabilidad</span>
+            <span class="chip">Trabajo en equipo</span>
+            <span class="chip">Comunicación</span>
+            <span class="chip">Proactividad</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Académicas y profesionales</h3>
+          <div class="chips">
+            <span class="chip">Gestión empresarial</span>
+            <span class="chip">Estrategia comercial</span>
+            <span class="chip">Análisis de negocios</span>
+            <span class="chip">Atención al cliente</span>
+            <span class="chip">Herramientas digitales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos">
+      <h2>Mis cursos</h2>
+      <p class="muted">Curso y docente vinculados a esta página académica.</p>
+      <div class="course">
+        <h3>Introducción a la Computación</h3>
+        <p>Docente: <strong>Ernesto Cuadros Vargas</strong></p>
+        <p class="muted">Universidad Católica San Pablo</p>
+      </div>
+      <!-- Agrega aquí los demás cursos y docentes de tu semestre. -->
+    </section>
+
+    <section id="intereses">
+      <h2>Fuera de clase</h2>
+      <p>Me interesa conocer nuevos lugares, vivir experiencias culturales y participar en eventos musicales. También disfruto explorar ideas de emprendimiento, aprender sobre negocios y desarrollar proyectos que puedan convertirse en oportunidades reales.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>César Antonio Arroyo Pariente</strong></p>
+    <p>Universidad Católica San Pablo · Arequipa, Perú</p>
+  </footer>
+</body>
+</html>
